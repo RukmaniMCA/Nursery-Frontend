@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanya Nursery Plants</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Body background with green plants and flowers */
+        body {
+            background-image: url('images/plant\ backcycel.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            color: #186120;
+        }
+
+        /* Full green background for the entire navbar */
+        .navbar {
+            background-color: #046511 !important;
+            padding: 1rem 1.5rem;
+        }
+
+        /* Navbar brand (Dhanya Nursery) styling */
+        .navbar-brand {
+            color: #f4f7f4 !important;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Align contact icons in the center of the navbar */
+        .navbar .contact-icons {
+            display: flex;
+            gap: 20px;
+            background-color: white; /* White background for contact icons */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* Specific colors for each icon */
+        .contact-icons a[href^="tel"] i {
+            color: #4CAF50;
+        }
+
+        .contact-icons a[href*="wa.me"] i {
+            color: #25D366;
+        }
+
+        .contact-icons a[href*="instagram.com"] i {
+            color: #C13584;
+        }
+
+        .contact-icons a[href*="youtube.com"] i {
+            color: #FF0000;
+        }
+
+        /* Hover effect */
+        .contact-icons a:hover i {
+            opacity: 0.8;
+        }
+
+        /* Navbar menu items aligned to the right */
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        /* Green background and white text for navbar items */
+        .navbar-nav .nav-link {
+            color: #f4f7f4 !important;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+            transition: color 0.3s;
+        }
+
+        /* Darker green color for hover effect on navbar links */
+        .navbar-nav .nav-link:hover {
+            color: #e2e87d !important; /* Light green on hover */
+        }
+
+        /* Dropdown menu with green background */
+        .dropdown-menu {
+            background-color: #046511;
+        }
+
+        /* Dropdown item color */
+        .dropdown-item {
+            color: #f4f7f4 !important;
+        }
+
+        /* Dropdown item hover effect */
+        .dropdown-item:hover {
+            background-color: #0f852a !important;
+        }
+
+        /* Remove light background of navbar-toggler */
+        .navbar-toggler {
+            background-color: #a7d3ad !important;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #8B4513;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            color: #761414;
+            font-size: 2rem;
+            line-height: 2;
+            padding: 0 2rem;
+            text-align: justify;
+            letter-spacing: 0.5px;
+        }
+    
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #007bff;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dhanya Nursery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Centered contact icons in navbar -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="contact-icons">
+                <a href="tel:+1234567890" title="Call us"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/6380042710" title="WhatsApp us"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/girlbossdhxxya" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/rukmani8256" title="Watch us on YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Right-aligned navbar items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home page.html">Home</a>
+                </li>
+                <!-- Dropdown for Products -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="indexUpdate.html#flower-plants">Flower Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#tree-plants">Trees</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#pot-plants">Pot Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#aqua-plants">Aqua Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#croton-plants">Croton Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#creeper-plants">Creeper Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#climber-plants">Climber Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#indoor-plants">Indoor Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#vegetable-plants">Vegetable Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#herbal-plants">Herbal Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#combo-plants">Combo Plants</a></li>
+                        <li><a class="dropdown-item" href="indexUpdate.html#fruit-plants">Fruit Plants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+<div class="container">
+  <h2>Contact us </h2>
+  <form action="#">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+    <label for="message">Message</label>
+    <input type="text" id="message" name="message" required>
+
+    <input type="submit" value="Submit">
+
+    <h3>DHANYA NURSERY<br>
+        DHANYA LANDSCAPES<br>
+        NH-47, Perundurai Road,<br>
+        Near Toll Plaza, Vijayamangalam,<br>
+        Erode-638056,<br>
+        Tamil Nadu,<br>
+        India.<br>
+        Email : dhanyanurseryvjm@gmail.com ,<br>
+        dhanyanurseryin2013@gmail.com<br>
+        Mobile :
+        Mr.Jayaprakash : +(91)-94432-63484, +(91)- 93642-63633<br>
+        Mrs.Amutha : +(91)- 98427-63633.</h3>
+  </form>
+</div>
+<!-- Bootstrap JS bundle (includes Popper.js for dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
